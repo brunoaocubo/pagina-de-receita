@@ -3,10 +3,11 @@
     src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf);
     font-weight: 400;
 }
+
 @font-face {
     font-family: Outfit;
     src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
-    font-weight: 400, 600, 700;
+    font-weight: 400 600 700;
 }
 
 *{
@@ -26,44 +27,116 @@
     --Rose50: hsl(330, 100%, 98%);
 }
 
-body{
-    background-color: var(--White);
-    font-size: 16px;
-}
-
 h1,h2{
     font-family: 'YoungSerif';
     font-weight: 400;
+    padding: 20px 0px;
 }
 
-p, li, td{
-    color: var(--Stone600);
-    font-family: 'Outfit';
+hr{
+    opacity: 25%;
 }
 
 strong{
     color: var(--Stone600);
 }
 
-main{
-    
+p, li, td, .text{
+    color: var(--Stone600);
+    font-family: 'Outfit';
 }
 
-.title-topic{
+.text{
+    text-align: justify;
+}
+
+li::marker{
     color: var(--Brown800);
-    font-size: 1.7em;
+    font-weight: bold;
 }
 
-#card-list{
-    background-color: var(--Rose50);
+body{
+    background-color: var(--White);
+    font-size: 16px;
 }
-#card-title{
+
+header #ilustration{
+    width: 100%;
+}
+
+main{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#description #main-title{
+    font-size: 2.5em;
+    line-height: 1em;
+}
+
+#description .text{
+    padding-bottom: 20px;
+}
+
+.preparation-card{
+    padding: 20px 20px 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--Rose50);
+    border-radius: 15px;
+}
+
+.preparation-title{
+    font-size: 1.3em;
     color: var(--Rose800);
     font-weight: 700;
 }
 
+.preparation-list{
+    padding: 10px 40px;
+}
 
+.preparation-list li{
+    line-height: 2em;
+}
 
+.preparation-list li::marker{
+    color: var(--Rose800);
+}
 
+h2.title-topic{
+    color: var(--Brown800);
+    font-size: 1.7em;
+}
 
+.list{
+    padding: 0px 30px 20px 30px;
+}
 
+.list li{
+    padding: 0px 0px 10px 15px;
+    text-align: justify;
+}
+
+.div-table{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 15px 0px;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 30px;
+}
+
+.row .nutrients{
+    color: var(--Brown800);
+}

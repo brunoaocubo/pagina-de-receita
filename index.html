@@ -10,25 +10,24 @@
 </head>
 <body>
     <header>
-        
+            <img src="assets/images/image-omelette.jpeg" alt="Imagem da receita de Omelette" id="ilustration">
     </header>
-    <main class="container">
-        <section class="flex-container" id="Description">
-            <img src="assets/images/image-omelette.jpeg" alt="Imagem da receita de Omelette">
-            <h1 id="title-principal">Simple Omelette Recipe</h1>
-            <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
-            <div id="card-list">
-                <p class="text" id="card-title">Preparation time</p>
-                <ul>
+    <main>
+        <section class="flex-container" id="description">
+            <h1 id="main-title">Simple Omelette Recipe</h1>
+            <p class="text">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+            <div class="preparation-card">
+                <p class="preparation-title">Preparation time</p>
+                <ul class="preparation-list">
                     <li><strong>Total:</strong> Approximately 10 minutes</li>
                     <li><strong>Preparation:</strong> 5 minutes</li>
                     <li><strong>Cooking:</strong> 5 minutes</li>
                 </ul>
             </div>
         </section>
-        <section class="flex-container" id="Ingredients">
+        <section class="flex-container" id="ingredients">
             <h2 class="title-topic">Ingredients</h2>
-            <ul>
+            <ul class="list">
                 <li>2-3 large eggs</li>
                 <li>Salt, to taste</li>
                 <li>Pepper, to taste</li>
@@ -36,9 +35,10 @@
                 <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
             </ul>
         </section>
-        <section class="flex-container" id="Instructions">
+        <hr>
+        <section class="flex-container" id="instructions">
             <h2 class="title-topic">Instructions</h2>
-            <ol type="1">
+            <ol class="list" type="1">
                 <li><strong>Beat the eggs:</strong> In a bowl, beat the eggs with a punch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
                 <li><strong>Heat the pan:</strong> Place a non-stick frying pan over medium heat and add butter or oil.</li>
                 <li><strong>Cook the omelette:</strong> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</li>
@@ -47,27 +47,39 @@
                 <li><strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.</li>
             </ol>
         </section>
-        <section class="flex-container" id="Nutrition">
+        <hr>
+        <section class="flex-container" id="nutrition">
             <h2 class="title-topic">Nutrition</h2>
             <p class="text">The table below shows nutritional values per serving without the additional fillings.</p>
-            <table>
-                <tr>
-                    <td>Calories</td>
-                    <td>277kcal</td>
-                </tr>
-                <tr>
-                    <td>Carbs</td>
-                    <td>0g</td>
-                </tr>
-                <tr>
-                    <td>Protein</td>
-                    <td>20g</td>
-                </tr>
-                <tr>
-                    <td>Fat</td>
-                    <td>22g</td>
-                </tr>
-            </table>
+            <div class="div-table">
+                <div class="row">
+                    <p>Calories</p>
+                    <strong>
+                        <p class="nutrients">277kcal</p>
+                    </strong>
+                </div>
+                <hr>
+                <div class="row">
+                    <p>Carbs</p>
+                    <strong>
+                        <p class="nutrients">0g</p>
+                    </strong>
+                </div>
+                <hr>
+                <div class="row">
+                    <p>Protein</p>
+                    <strong>
+                        <p class="nutrients">20g</p>
+                    </strong>
+                </div>
+                <hr>
+                <div class="row">
+                    <p>Fat</p>
+                    <strong>
+                        <p class="nutrients">22g</p>
+                    </strong>
+                </div>
+            </div>
         </section>
     </main>
 </body>
