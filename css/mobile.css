@@ -1,0 +1,69 @@
+@font-face{
+    font-family: YoungSerif;
+    src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Outfit;
+    src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+    font-weight: 400, 600, 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+    --Brown800: hsl(14, 45%, 36%);
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(330, 100%, 98%);
+}
+
+body{
+    background-color: var(--White);
+    font-size: 16px;
+}
+
+h1,h2{
+    font-family: 'YoungSerif';
+    font-weight: 400;
+}
+
+p, li, td{
+    color: var(--Stone600);
+    font-family: 'Outfit';
+}
+
+strong{
+    color: var(--Stone600);
+}
+
+main{
+    
+}
+
+.title-topic{
+    color: var(--Brown800);
+    font-size: 1.7em;
+}
+
+#card-list{
+    background-color: var(--Rose50);
+}
+#card-title{
+    color: var(--Rose800);
+    font-weight: 700;
+}
+
+
+
+
+
+
